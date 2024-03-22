@@ -85,10 +85,13 @@ CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 FROM python:3.9
 
 # Set the working directory in the container
-WORKDIR /app
+# WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+# COPY . /app
 
 # Run the Python script when the container launches
-CMD ["python", "script.py"]
+# CMD ["python", "script.py"]
+
+# Run the Python script when the container launches
+# CMD ["mkdir", "app"]
